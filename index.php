@@ -11,7 +11,12 @@
 
     <?php
         echo 'Hello PHP';
-        echo '<hr>'
+        echo '<hr>';
+    ?>
+    <?php
+        $name = 'Hans';
+        echo $name;
+        echo '<h1> My name is : '.$name. '</h1>';
     ?>
 
 </body>
