@@ -7,8 +7,9 @@
     <title>If Statements</title>
 </head>
 <body>
+    <h2>If Else Statements</h2>
     <?php
-        echo '<h2>If Statements</h2>';
+        
         $grade = 50;
         if($grade >= 50){
             echo '<h3 style="color : green"> You have passed </h3>';
