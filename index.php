@@ -7,7 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <h2>Follow each Link to the page example</h2>
+    <ul>
+        <li><a href="array.php">Array</a></li>
+        <li><a href="forloop.php">For Loop</a></li>
+        <li><a href="dowhileloop.php">Do While Loop</a></li>
+        <li><a href="while.php">While Loop</a></li>
+        <li><a href="ifstatement.php">If Statement</a></li>
+        <li><a href="switchstatement.php">Switch Statement</a></li>
+    </ul>
 
     <?php
         echo 'Hello PHP';
