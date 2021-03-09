@@ -27,6 +27,8 @@
             echo '<hr>';
             echo substr($phrase1,5,10);
             echo '<hr>';
+            echo strlen($phrase1);
+            echo '<hr>';
 
 
         ?>
