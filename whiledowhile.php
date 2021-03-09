@@ -22,9 +22,8 @@
             do{
                 echo '<p> I am Do While Loop</p>';
                 $grade++;
-            } while($grade< 10)
-            
-
+            } while($grade< 10);
+            echo '<p> EXIT</p>';
     ?>
 </body>
 </html>
