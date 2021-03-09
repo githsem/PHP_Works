@@ -14,6 +14,7 @@
         <li><a href="whiledowhile.php">While Loop</a></li>
         <li><a href="ifstatement.php">If Statement</a></li>
         <li><a href="switchstatement.php">Switch Statement</a></li>
+        <li><a href="stringmanip.php">String</a></li>
     </ul>
 
     <?php
