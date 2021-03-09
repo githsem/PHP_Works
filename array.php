@@ -10,7 +10,13 @@
 <h2>Array</h2>
         
         <?php
-            
+            //a variable
+            $num = 3;
+
+            //an array
+            $numbers = array(1,2,3,4,5,6,7,8,9,10);
+
+            echo $numbers[0];
         ?>
 </body>
 </html>
