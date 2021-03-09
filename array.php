@@ -14,11 +14,16 @@
             $num = 3;
 
             //an array
-            $numbers = array(1,2,3,4,5,6,7,8,9,10);
+            $numbers = array(1,34,3,54,25,6,77,8,900,10);
 
             echo $numbers[0];
             echo '<hr>';
             echo count($numbers);
+            echo '<hr>';
+            for($count = 0; $count<10;$count++){
+                echo $numbers[$count];
+                echo ',';
+            }
         ?>
 </body>
 </html>
