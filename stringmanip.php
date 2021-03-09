@@ -17,7 +17,7 @@
             echo '<hr>';
             echo $phrase2;
             echo '<hr>';
-            echo $phrase1.$phrase2;
+            echo $phrase1.$phrase2;F
             echo '<hr>';
 
             //transformation
@@ -29,8 +29,6 @@
             echo '<hr>';
             echo strlen($phrase1);
             echo '<hr>';
-
-
         ?>
     
 </body>
