@@ -10,6 +10,7 @@
 <h2>String</h2>
         
         <?php
+            //concatenation
             $phrase1 = "student who came late";
             $phrase2 = "in class, stand with";
             echo $phrase1;
@@ -17,6 +18,14 @@
             echo $phrase2;
             echo '<hr>';
             echo $phrase1.$phrase2;
+            echo '<hr>';
+
+            //transformation
+            echo ucwords($phrase1);
+            echo '<hr>';
+            echo '<hr>';
+            echo '<hr>';
+
 
         ?>
     
