@@ -11,8 +11,7 @@
     <ul>
         <li><a href="array.php">Array</a></li>
         <li><a href="forloop.php">For Loop</a></li>
-        <li><a href="dowhileloop.php">Do While Loop</a></li>
-        <li><a href="while.php">While Loop</a></li>
+        <li><a href="whiledowhile.php">While Loop</a></li>
         <li><a href="ifstatement.php">If Statement</a></li>
         <li><a href="switchstatement.php">Switch Statement</a></li>
     </ul>
