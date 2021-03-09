@@ -21,8 +21,9 @@
             echo '<hr>';
 
             //transformation
-            echo ucwords($phrase1);
+            echo strtoupper($phrase1);
             echo '<hr>';
+            echo str_repeat('abc',5);
             echo '<hr>';
             echo '<hr>';
 
