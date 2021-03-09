@@ -25,6 +25,7 @@
             echo '<hr>';
             echo str_repeat('abc',5);
             echo '<hr>';
+            echo substr($phrase1,5,10);
             echo '<hr>';
 
 
