@@ -9,6 +9,7 @@
 <body>
     <h2>Follow each Link to the page example</h2>
     <ul>
+        <li><a href="index.php">Home</a></li>
         <li><a href="array.php">Array</a></li>
         <li><a href="forloop.php">For Loop</a></li>
         <li><a href="whiledowhile.php">While Loop</a></li>
