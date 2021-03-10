@@ -14,9 +14,19 @@
             function writeMessage(){
                 echo "You are very nice";
             }
+
+            //Calling Function
             writeMessage();
             echo '<hr>';
+            writeMessage();
             echo '<hr>';
+
+            //Function with parameters
+            function addFunction($num1, $num2){
+                $sum = $num1 + $num2;
+                return $sum;
+            }
+            echo addFunction(3,5);
             echo '<hr>';
             echo '<hr>';
             echo '<hr>';
