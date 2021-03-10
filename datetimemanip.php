@@ -13,6 +13,7 @@
             $datenow= getdate();
             echo $datenow["mday"];
             echo '<hr>';
+            echo $datenow["mon"];
             echo '<hr>';
             echo '<hr>';
             echo '<hr>';
