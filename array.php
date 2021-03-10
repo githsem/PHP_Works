@@ -17,5 +17,6 @@
                 echo ',';
             }
         ?>
+<?php require 'includes/footer.php' ?>            
 </body>
 </html>
