@@ -15,6 +15,7 @@
             echo '<hr>';
             echo $datenow["mon"];
             echo '<hr>';
+            echo $datenow["year"];
             echo '<hr>';
             echo '<hr>';
             echo '<hr>';
