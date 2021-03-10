@@ -16,6 +16,7 @@
         <li><a href="switchstatement.php">Switch Statement</a></li>
         <li><a href="stringmanip.php">String</a></li>
         <li><a href="datetimemanip.php">Date Time</a></li>
+        <li><a href="functions.php">Functions</a></li>
     </ul>
 
     <?php
