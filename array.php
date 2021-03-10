@@ -1,4 +1,7 @@
-<?php include 'includes/header.php' ?>
+<?php
+    $title = "Array"; 
+    include 'includes/header.php'; 
+?>
 <h2>Array</h2>
         
         <?php
