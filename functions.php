@@ -30,6 +30,13 @@
             echo '<hr>';
             echo addFunction("3","5");
             echo '<hr>';
+
+            function changeNumber(&$num){
+                $num += 100;
+            }
+            $num = 200;
+            changeNumber($num);
+            echo $num;
             echo '<hr>';
         ?>
     
