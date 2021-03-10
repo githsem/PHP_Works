@@ -1,4 +1,7 @@
-   <?php include 'includes/header.php' ?>
+   <?php
+        $title = "index"; 
+        include 'includes/header.php'; 
+   ?>
    <?php
         echo 'Hello PHP';
         echo '<hr>';
