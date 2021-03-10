@@ -17,8 +17,6 @@
             echo '<hr>';
             echo $datenow["year"];
             echo '<hr>';
-            echo '<hr>';
-            echo '<hr>';
         ?>
 </body>
 </html>
