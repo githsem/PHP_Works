@@ -28,6 +28,7 @@
             }
             echo addFunction(3,5);
             echo '<hr>';
+            echo addFunction("3","5");
             echo '<hr>';
             echo '<hr>';
         ?>
