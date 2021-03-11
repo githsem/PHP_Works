@@ -1,9 +1,11 @@
    <?php
         $title = "index"; 
         include 'includes/header.php'; 
-   ?>
-   <?php
+   
         echo 'Hello PHP';
         echo '<hr>';
-    ?>
-    <?php include 'includes/footer.php' ?>
+   ?>
+   <button type="button" class="btn btn-dark">Click Me!</button>
+   <?php    
+   include 'includes/footer.php' 
+   ?>
