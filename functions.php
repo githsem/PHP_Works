@@ -34,6 +34,3 @@
             echo $num;
             echo '<hr>';
         ?>
-    
-</body>
-</html>
