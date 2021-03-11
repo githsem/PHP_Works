@@ -21,5 +21,3 @@
             echo '<p> EXIT</p>';
     ?>
 <?php include 'includes/footer.php' ?>      
-</body>
-</html>
