@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>While Do While Loop</title>
-</head>
-<body>
+<?php
+        $title = "While"; 
+        include 'includes/header.php'; 
+   ?>
     <h2>While Loop</h2>
         
         <?php
@@ -25,5 +20,6 @@
             } while($grade< 10);
             echo '<p> EXIT</p>';
     ?>
+<?php include 'includes/footer.php' ?>      
 </body>
 </html>
