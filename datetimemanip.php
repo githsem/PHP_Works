@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Dite Time</title>
-</head>
-<body>
+<?php
+    $title = "Date Time"; 
+    include 'includes/header.php'; 
+?>
 <h2>Date Time</h2>
         
         <?php
@@ -18,5 +13,6 @@
             echo $datenow["year"];
             echo '<hr>';
         ?>
+<?php include 'includes/footer.php' ?>        
 </body>
 </html>
