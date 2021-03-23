@@ -31,7 +31,7 @@
             echo 'At least one ingredients is required <br/>';
         }else{
             $ingredients = $_POST['ingredients'];
-            if(!preg_match('/^[a-zA-Z\s]+$/', $ingredients)){
+            if(!preg_match('/^([a-zA-Z\s]+)(,\s*[a-zA-Z\s]*)*$/', $ingredients)){
                 echo 'ingredients must be letters and spaces only';
             }
         }
