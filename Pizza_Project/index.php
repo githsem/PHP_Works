@@ -21,8 +21,6 @@
     //close connection
     mysqli_close($conn);
 
-    print_r($pizzas);
-
 ?>
 
 <!DOCTYPE html>
@@ -39,6 +37,9 @@
                     <div class="card-content center">
                         <h6><?php echo htmlspecialchars($pizza['title']); ?></h6>
                         <div><?php echo htmlspecialchars($pizza['ingredients']); ?></div>
+                    </div>
+                    <div class="card-action right-align">
+                        <a href="#" class="brand-text">more info</a>
                     </div>
                 </div>
             </div>
