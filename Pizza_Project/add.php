@@ -48,10 +48,13 @@
         <form action="add.php" method ="POST" class="white">
             <label for="">Your Email</label>
             <input type="text" name="email">
+            <div class="red-text"><?php echo $errors['email']; ?></div>
             <label for="">Pizza Title</label>
             <input type="text" name="title">
+            <div class="red-text"><?php echo $errors['title']; ?></div>
             <label for="">Ingredients (comma seperated): </label>
             <input type="text" name="ingredients">
+            <div class="red-text"><?php echo $errors['ingredients']; ?></div>
             <div class="center">
                 <input type="submit" name="submit" value="submit" class="btn brand z-depth-0">
             </div>
