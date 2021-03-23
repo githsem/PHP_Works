@@ -32,7 +32,7 @@
         }else{
             $ingredients = $_POST['ingredients'];
             if(!preg_match('/^([a-zA-Z\s]+)(,\s*[a-zA-Z\s]*)*$/', $ingredients)){
-                echo 'ingredients must be letters and spaces only';
+                echo 'ingredients must be a coma separated list';
             }
         }
 
