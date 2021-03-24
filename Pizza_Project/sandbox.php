@@ -4,7 +4,7 @@
 if(isset($_POST['submit'])){
 
     //cookie for gender
-    setcookie('gender',$_POST['gender'])
+    setcookie('gender',$_POST['gender'], time() + 86400);
 
     session_start();
     $_SESSION['name'] = $_POST['name'];
