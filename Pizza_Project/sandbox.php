@@ -1,35 +1,38 @@
-<?php
+<?php 
 
-//session
-if(isset($_POST['submit'])){
+class User{
 
-    //cookie for gender
-    setcookie('gender',$_POST['gender'], time() + 86400);
+    private $email;
+    private $name;
 
-    session_start();
-    $_SESSION['name'] = $_POST['name'];
-    header('Location: index.php');
-}
+    public function __construct($name, $email){
+        $this->name = $name;
+        $this->email = $email;
+    }
+
+    public function login(){
+        echo $this->name.' logged in';
+    }
+
+    public function getName(){
+        return $this->name;
+    }
+    public function setName($name){
+        if(is_string($name) && strlen($name) > 1){
+            $this->name = $name;
+            return "name has been updated to $name";
+        }
+        else{
+            return 'not a valid name';
+        }
+    }
+
+}    
+
+    $userOne = new User('Hans',"user@test.com");
+
+
+    echo $userOne->setName("Neu");
+    echo $userOne->getName();
+
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-
-<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
-    <input type="text name" name="name">
-    <select name="gender" id="">
-        <option value="male">male</option>
-        <option value="female">female</option>
-    </select>
-    <input type="submit" name="submit" value="submit">
-
-</form>
-    
-</body>
-</html>
