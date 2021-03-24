@@ -17,8 +17,8 @@ if(isset($_POST['submit'])){
 </head>
 <body>
 
-<form action="<?php echo $_SERVER['PHP_SELF]' ?>" method="POST">
-    <input type="text name">
+<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
+    <input type="text name" name="name">
     <input type="submit" name="submit" value="submit">
 
 </form>
