@@ -18,7 +18,7 @@ if(isset($_POST['delete'])){
 
 
 
-// ceheck GET request id param
+// check GET request id param
 if(isset($_GET['id'])){
 
     $id = mysqli_real_escape_string($conn, $_GET['id']);
