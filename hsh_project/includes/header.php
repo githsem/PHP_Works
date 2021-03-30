@@ -20,6 +20,7 @@
         }
         #zoom:hover{
             transform: scale(1.2);
+            opacity: 0.5;
         }
     </style>
 </head>
