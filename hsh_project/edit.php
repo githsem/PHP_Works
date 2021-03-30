@@ -31,10 +31,10 @@
     }    
 
 ?>
-<form action="edit.php?" method="GET">
+<form action="edit.php" method="GET">
   <div class="mb-3">
     <label for="buchtitel" class="form-label">Buchtitel</label>
-    <input required type="text" class="form-control" id="buchtitel" name="buchtitel">
+    <input required type="text" class="form-control" id="buchtitel" name="buchtitel" value="hahaha">
   </div>
   <div class="mb-3">
     <label for="kurzbeschreibung" class="form-label">Kurzbeschreibung</label>
