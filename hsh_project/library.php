@@ -1,7 +1,17 @@
 <?php require "includes/header.php"; ?>
 
 <h1 class="display-4 text-center">Bibliothek</h1><br>
-
+<div class="book">
+  <div class="back"></div>
+  <div class="page6"></div>
+  <div class="page5"></div>
+  <div class="page4"></div>
+  <div class="page3"></div>
+  <div class="page2"></div>
+  <div class="page1"></div>
+  <div class="front"></div>
+</div>
+<br><br>
 <table class="table table-striped">
         <tr>
             <th>ID</th>
