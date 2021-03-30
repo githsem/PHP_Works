@@ -1,6 +1,7 @@
 <?php require "includes/header.php"; ?>
 
 <?php 
+    $errors = array('buchtitel'=>'','kurzbeschreibung'=>'','year'=>'');
     if(isset($_GET['submit'])){
         $buchtitel =$_GET['buchtitel'];
         $kurzbeschreibung = $_GET['kurzbeschreibung'];
@@ -8,16 +9,25 @@
         $pubid =$_GET['verlag'];
         $id=$_GET['id'];
 
-        $sql = "UPDATE books SET title = '$buchtitel', description = '$kurzbeschreibung', publishing_year = '$year', publisher_id='$pubid' 
-        WHERE ID = $id";
+        if(!filter_var($year, FILTER_VALIDATE_INT)){
+          $errors['year']= "Date Error";
+        }
 
-
-        if(mysqli_query($conn, $sql)){
-            header('Location: books.php');
+        if(array_filter($errors)){
+          //echo "error";
         }
         else{
+          $sql = "UPDATE books SET title = '$buchtitel', description = '$kurzbeschreibung', publishing_year = '$year', publisher_id='$pubid' 
+          WHERE ID = $id";
+  
+          if(mysqli_query($conn, $sql)){
+            header('Location: books.php');
+          }
+          else{
             echo 'query error: '. mysqli_error($conn);
+          }
         }
+
     }    
 
 ?>
@@ -33,6 +43,7 @@
   <div class="mb-3">
     <label for="year" class="form-label">Publishing Year</label>
     <input required  type="text" class="form-control" id="year" name="year" >
+    <div class="text-danger"><?php echo $errors['year']; ?></div>
   </div>
   <input type="hidden" name="id" value="<?php echo $id=$_GET['id']; ?>">
   <label for="year" class="form-label">Verlag auswählen</label>
