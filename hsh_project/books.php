@@ -12,14 +12,14 @@
 ?>
 <?php if($books) { foreach($books as $row){ ?>
     
-    <div class="card" style="width: 10rem; float:left;">
+    <div class="card" style="width: 15rem; float:left;">
         <img src="img/book.png" class="card-img-top" alt="book">
         <div class="card-body">
             <h5 class="card-title"><?php echo $row["btitle"] ?></h5>
             <p class="card-text"><?php echo $row["description"] ?></p>
-            <a href="edit.php?id=<?php echo $row["ID"] ?>" class="btn btn-primary">Bearbeten</a>
-            <br>
-            <a href="delete.php?id=<?php  echo $row["ID"] ?>" class="btn btn-danger">Loschen  </a>  
+            <a href="edit.php?id=<?php echo $row["ID"] ?>" class="btn btn-outline-primary">Bearbeten</a>
+            
+            <a href="delete.php?id=<?php  echo $row["ID"] ?>" class="btn btn-outline-danger">Loschen  </a>  
         </div>
     </div>
     
