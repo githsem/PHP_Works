@@ -45,5 +45,4 @@ foreach($books as $row){
 
 ?>        
 
-
 <?php require "includes/footer.php"; ?>
