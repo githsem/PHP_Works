@@ -6,9 +6,7 @@
 
 <div class="text-center">
   <img id="zoom" class="float-start" style="width:300px;  border-radius: 70px;" src="img/book.jpg"  alt="...">
-  
   <img id="zoom" class="float-auto"style="width:300px;  border-radius: 70px;" src="img/homepage.jpg"  alt="...">
-  
   <img id="zoom" class="float-end" style="width:210px;  border-radius: 70px;" src="img/plus3.png"  alt="...">
 </div>
 <br>

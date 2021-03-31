@@ -29,8 +29,6 @@
         </div>
     </div>
     
-
-    
 <?php }} ?>
 
 <?php require "includes/footer.php"; ?>

@@ -14,7 +14,6 @@
         }
 
         
-
         if(array_filter($errors)){
           //echo "error";
         }
@@ -67,9 +66,6 @@
     <button type="submit" name="submit" class="btn btn-primary">Submit</button>
   </div>
 </form>
-
-
-
 
 
 <?php require "includes/footer.php"; ?>
