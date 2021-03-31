@@ -12,8 +12,8 @@
 ?>
 <?php if($books) { foreach($books as $row){ ?>
     
-    <div class="card" style="width: 16rem; float:left;">
-        <img src="img/book.png" class="card-img-top" alt="book">
+    <div class="card" style="width: 16rem;  float:left;">
+        <img src="img/book2.png" style="height:270px;" class="card-img-top" alt="book">
         <div class="card-body">
             <h5 class="card-title"><?php echo $row["btitle"] ?></h5>
             <p class="card-text"><?php echo $row["description"] ?></p>
