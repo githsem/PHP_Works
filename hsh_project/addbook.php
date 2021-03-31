@@ -35,14 +35,14 @@
 <form action="addbook.php" method="GET">
   <div class="mb-3">
     <label for="buchtitel" class="form-label">Buchtitel</label>
-    <input required type="text" class="form-control" id="buchtitel" name="buchtitel">
+    <input required maxlength="50" placeholder="max. 50 character" type="text" class="form-control" id="buchtitel" name="buchtitel">
   </div>
   <div class="mb-3">
     <label for="kurzbeschreibung" class="form-label">Kurzbeschreibung</label>
-    <textarea required class="form-control" name="kurzbeschreibung" id="kurzbeschreibung" cols="15" rows="3"></textarea>
+    <textarea required maxlength="150" placeholder="max. 150 character" class="form-control" name="kurzbeschreibung" id="kurzbeschreibung" cols="15" rows="3"></textarea>
   </div>
   <div class="mb-3">
-    <label for="year" class="form-label">Publishing Year</label>
+    <label for="year" class="form-label">Erscheinungsjahr</label>
     <input required type="text" class="form-control" id="year" name="year" >
     <div class="text-danger"><?php echo $errors['year']; ?></div>
   </div>
