@@ -31,18 +31,35 @@
     }    
 
 ?>
+
+<?php 
+    $id=$_GET['id'];
+    $sql = "SELECT * FROM books WHERE ID = $id ";
+    $result = mysqli_query($conn, $sql);
+
+    $books = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+    mysqli_free_result($result);
+    mysqli_close($conn);
+    foreach($books as $row){
+      $buchtitel =$row["title"];
+      $kurzbeschreibung = $row["description"];
+      $year = $row["publishing_year"];
+    }
+    
+?>
 <form action="edit.php" method="GET">
   <div class="mb-3">
     <label for="buchtitel" class="form-label">Buchtitel</label>
-    <input required type="text" class="form-control" id="buchtitel" name="buchtitel" value="hahaha">
+    <input required type="text" class="form-control" id="buchtitel" name="buchtitel" value="<?php echo $buchtitel?>">
   </div>
   <div class="mb-3">
     <label for="kurzbeschreibung" class="form-label">Kurzbeschreibung</label>
-    <textarea required class="form-control" name="kurzbeschreibung" id="kurzbeschreibung" cols="15" rows="3"></textarea>
+    <textarea required class="form-control" name="kurzbeschreibung" id="kurzbeschreibung" cols="15" rows="3" ><?php echo $kurzbeschreibung?></textarea>
   </div>
   <div class="mb-3">
     <label for="year" class="form-label">Publishing Year</label>
-    <input required  type="text" class="form-control" id="year" name="year" >
+    <input required  type="text" class="form-control" id="year" name="year" value="<?php echo $year?>">
     <div class="text-danger"><?php echo $errors['year']; ?></div>
   </div>
   <input type="hidden" name="id" value="<?php echo $id=$_GET['id']; ?>">
