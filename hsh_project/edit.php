@@ -74,7 +74,9 @@
   </select>
 
 <br>
-  <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+  <div class="d-grid gap-2">
+      <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+  </div>
 </form>
 
 
