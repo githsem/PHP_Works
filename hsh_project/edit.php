@@ -1,4 +1,5 @@
 <?php require "includes/header.php"; ?>
+<h1 class="display-4 text-center">Bearbeiten</h1>
 
 <?php 
     $errors = array('buchtitel'=>'','kurzbeschreibung'=>'','year'=>'');
@@ -51,14 +52,14 @@
 <form action="edit.php" method="GET">
   <div class="mb-3">
     <label for="buchtitel" class="form-label">Buchtitel</label>
-    <input required type="text" class="form-control" id="buchtitel" name="buchtitel" value="<?php echo $buchtitel?>">
+    <input required maxlength="50" placeholder="max. 50 character" type="text" class="form-control" id="buchtitel" name="buchtitel" value="<?php echo $buchtitel?>">
   </div>
   <div class="mb-3">
     <label for="kurzbeschreibung" class="form-label">Kurzbeschreibung</label>
-    <textarea required class="form-control" name="kurzbeschreibung" id="kurzbeschreibung" cols="15" rows="3" ><?php echo $kurzbeschreibung?></textarea>
+    <textarea required maxlength="150" placeholder="max. 150 character" class="form-control" name="kurzbeschreibung" id="kurzbeschreibung" cols="15" rows="3" ><?php echo $kurzbeschreibung?></textarea>
   </div>
   <div class="mb-3">
-    <label for="year" class="form-label">Publishing Year</label>
+    <label for="year" class="form-label">Erscheinungsjahr</label>
     <input required  type="text" class="form-control" id="year" name="year" value="<?php echo $year?>">
     <div class="text-danger"><?php echo $errors['year']; ?></div>
   </div>
@@ -73,13 +74,6 @@
   </select>
 
 <br>
-  <div required class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Die in diesem Formular eingegebene Daten
-    werden verwendet, um ein neues Buch in unserer Datenbank anzulegen. Die Daten sind durch Absenden des Formular 
-    fur die Offentlichkeit einsehbar
-    </label>
-  </div>
   <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 </form>
 
