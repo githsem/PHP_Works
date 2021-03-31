@@ -19,7 +19,7 @@
             <p class="card-text"><?php echo $row["description"] ?></p>
             <a href="edit.php?id=<?php echo $row["ID"] ?>" class="btn btn-outline-primary">Bearbeten</a>
             
-            <a href="delete.php?id=<?php  echo $row["ID"] ?>" class="btn btn-outline-danger">Loschen  </a>  
+            <a href="delete.php?id=<?php  echo $row["ID"] ?>" class="btn btn-outline-danger">Löschen  </a>  
         </div>
     </div>
     
