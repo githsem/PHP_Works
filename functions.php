@@ -9,7 +9,6 @@
             function writeMessage(){
                 echo "You are very nice";
             }
-
             //Calling Function
             writeMessage();
             echo '<hr>';
