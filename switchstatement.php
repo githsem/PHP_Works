@@ -18,6 +18,5 @@
                 echo '<h2 style="color : red"> You have FAILED! </h2>';    
                 break;   
         }
-
     ?>
 <?php include 'includes/footer.php' ?>    
