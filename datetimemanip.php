@@ -2,8 +2,7 @@
     $title = "Date Time"; 
     include 'includes/header.php'; 
 ?>
-<h2>Date Time</h2>
-        
+<h2>Date Time</h2>      
         <?php
             $datenow= getdate();
             echo $datenow["mday"];
