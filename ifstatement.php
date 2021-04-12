@@ -3,8 +3,7 @@
     include 'includes/header.php'; 
 ?>
     <h2>If Else Statements</h2>
-    <?php
-        
+    <?php    
         $grade = 50;
         if($grade >= 50){
             echo '<h3 style="color : green"> You have passed </h3>';
