@@ -52,14 +52,10 @@
             } else{
                 //error
                 echo 'query error: ' . mysqli_error($conn);
-            }
-            
+            } 
         }
-
     }//end of POST check
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
