@@ -13,10 +13,7 @@ if(isset($_POST['delete'])){
        //failure
        echo 'query error: ' . mysqli_error($conn);
    }
-
 }
-
-
 
 // check GET request id param
 if(isset($_GET['id'])){
