@@ -14,11 +14,8 @@
     //echo 'file does not exist';
 //}
 
-
 $file = 'quotes.txt';
 $handle = fopen($file,'r');
 echo fread($handle, filesize($file));
 fclose($handle);
-
-
 ?>
