@@ -1,12 +1,10 @@
 <?php
         $title = "Switch"; 
         include 'includes/header.php'; 
-   ?>
+?>
     <h2>Switch Statement</h2>
     <?php
-
         $grade = 'A';
-
         switch($grade){
             case 'A' : 
                 echo '<h2 style="color : green"> You are SUPERSTAR! </h2>';
